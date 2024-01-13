@@ -19,6 +19,15 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 0 5vw;
+  }
+  .App-logo {
+    height: 25vmin;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
