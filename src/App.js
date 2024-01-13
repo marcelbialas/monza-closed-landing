@@ -9,8 +9,8 @@ function App() {
         <div>
           <h2>Wir haben geschlossen!</h2>
           <p>
-            Nach über 27 Jahren im Kartsport haben wir am 18.12.2023 unseren
-            Betrieb eingestellt. <br />
+            Nach über 27 Jahren haben wir am 18.12.2023 unseren Betrieb
+            eingestellt. <br />
             <br />
             Wir möchten uns herzlich bei allen Kund:innen, Mitarbeiter:innen und
             Freunden für die zahlreichen spannenden Rennen und die
