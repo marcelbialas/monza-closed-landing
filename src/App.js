@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <h2>Wir haben geschlossen!</h2>
+          <h2>Wir haben geschlossen.</h2>
           <p>
             Nach über 27 Jahren haben wir am 18.12.2023 unseren Betrieb
             eingestellt. <br />
