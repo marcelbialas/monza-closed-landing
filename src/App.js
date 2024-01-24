@@ -10,30 +10,33 @@ function App() {
   return (
     <AppContainer>
       <ImageContainer>
+        <Credit>
+          Fotos von <a href="#">@whokilledbambi</a>
+        </Credit>
         <Logo src={MonzaLogo} />
       </ImageContainer>
       <ContentConainer>
         <h1>Wir haben geschlossen!</h1>
-        <h2>Liebe Rennsportfreunde,</h2>
+        <h2>Liebe Kundinnen und Kunden,</h2>
         <p>
-          mit einem wehmütigen Blick zurück und einem dankbaren Herzen möchten
-          wir euch darüber informieren, dass unsere Kartbahn seit dem 18.
-          Dezember 2023 ihre Pforten geschlossen hat. Diese 27 Jahre voller
-          Adrenalin, Fahrspaß und unvergesslicher Momente wären ohne euch,
-          unsere geschätzten Kunden und Freunde, nicht möglich gewesen. <br />
+          mit einem wehmütigen Blick zurück möchten wir euch darüber
+          informieren, dass unsere Kartbahn seit dem{" "}
+          <strong>18. Dezember 2023</strong> ihre Pforten geschlossen hat. Diese
+          27 Jahre voller Adrenalin, Fahrspaß und unvergesslicher Momente wären
+          ohne euch nicht möglich gewesen. <br />
           <br />
           Seit der Eröffnung im Jahr 1996 durften wir viele Höhen und Tiefen
           erleben, aber vor allem haben wir zahlreiche Freundschaften
-          geschlossen und unvergleichliche Rennmomente geteilt. Die
-          Entscheidung, die Kartbahn zu schließen, fiel uns nicht leicht, aber
-          wir möchten uns bei euch allen für die unglaubliche Unterstützung,
-          Leidenschaft und die vielen lachenden Gesichter bedanken, die unsere
-          Bahn über die Jahre gefüllt haben.
+          geschlossen und unvergleichliche Momente geteilt. Die Entscheidung,
+          die Kartbahn zu schließen, fiel uns nicht leicht, aber wir möchten uns
+          bei euch allen für die unglaubliche Unterstützung, Leidenschaft und
+          die vielen lachenden Gesichter bedanken, die unsere Bahn über die
+          Jahre gefüllt haben.
           <br />
           <br />
-          Jede Kurve,jedes Überholmanöver, und jeder Jubelschrei hat unsere Bahn
-          mit Leben erfüllt. Es war eine fantastische Reise, die wir nie
-          vergessen werden. Wir schließen dieses Kapitel mit einem Lächeln,
+          Jede Kurve,jedes Überholmanöver, und jeder Jubelschrei hat unsere
+          Kartbahn mit Leben erfüllt. Es war eine fantastische Reise, die wir
+          nie vergessen werden. Wir schließen dieses Kapitel mit einem Lächeln,
           voller Dankbarkeit für die vielen Jahre gemeinsamer Erlebnisse.
           <br />
           <br />
@@ -49,6 +52,13 @@ function App() {
           begrüßen zu dürfen. Möge die Rennleidenschaft in euch weiterbrennen,
           auch wenn die Motoren auf unserer Strecke verstummt sind.
         </p>
+        <Footer>
+          <p>&copy; 2024 Monza Indoor Kart GmbH</p>
+          <div>
+            <a href="">Impressum</a>
+            <a href="">Datenschutz</a>
+          </div>
+        </Footer>
       </ContentConainer>
     </AppContainer>
   );
@@ -73,14 +83,13 @@ const ImageContainer = styled.div`
   background-color: #eee;
   background: url(${img});
   background-size: cover;
-  filter: grayscale();
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column-reverse;
+  align-items: space-between;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    filter: none;
-    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (max-width: 768px) {
@@ -90,11 +99,32 @@ const ImageContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 100px;
+  width: 150px;
+  height: auto;
   padding: 25px 25px;
+  display: inline-block;
 
   @media screen and (max-width: 768px) {
     height: 60px;
+  }
+`;
+
+const Credit = styled.div`
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 5px;
+
+  a,
+  a:visited {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
@@ -107,16 +137,36 @@ const ContentConainer = styled.div`
   overflow-y: scroll;
 
   h1 {
+    margin-bottom: 0px;
+    color: #c70039;
   }
-  ul {
-    list-style-type: none;
-    padding: 0 5px;
-    font-size: 28px;
+  h2 {
+    margin-top: 0px;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 768px) {
     width: 80%;
     height: auto;
+  }
+`;
+
+const Footer = styled.footer`
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  a,
+  a:visited {
+    color: #666;
+    text-decoration: none;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
