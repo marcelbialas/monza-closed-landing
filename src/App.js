@@ -55,8 +55,8 @@ function App() {
         <Footer>
           <p>&copy; 2024 Monza Indoor Kart GmbH</p>
           <div>
-            <a href="">Impressum</a>
-            <a href="">Datenschutz</a>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
           </div>
         </Footer>
       </ContentConainer>
