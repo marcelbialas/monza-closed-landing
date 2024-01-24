@@ -98,8 +98,6 @@ const Logo = styled.img`
   }
 `;
 
-const Credit = styled.div``;
-
 const ContentConainer = styled.div`
   width: 45vw;
   height: 100%;
