@@ -11,7 +11,8 @@ function App() {
     <AppContainer>
       <ImageContainer>
         <Credit>
-          Fotos von <a href="#">@whokilledbambi</a>
+          Fotos von{" "}
+          <a href="https://instagram.com/whokilledbambi">@whokilledbambi</a>
         </Credit>
         <Logo src={MonzaLogo} />
       </ImageContainer>
@@ -55,8 +56,8 @@ function App() {
         <Footer>
           <p>&copy; 2024 Monza Indoor Kart GmbH</p>
           <div>
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <a href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a>
           </div>
         </Footer>
       </ContentConainer>
