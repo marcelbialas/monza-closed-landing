@@ -106,7 +106,7 @@ const Logo = styled.img`
   display: inline-block;
 
   @media screen and (max-width: 768px) {
-    height: 60px;
+    width: 80px;
   }
 `;
 
@@ -126,6 +126,10 @@ const Credit = styled.div`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
 `;
 
@@ -147,7 +151,7 @@ const ContentConainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
 `;
