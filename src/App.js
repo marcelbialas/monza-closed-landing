@@ -13,6 +13,7 @@ function App() {
         <Logo src={MonzaLogo} />
       </ImageContainer>
       <ContentConainer>
+        <h1>Wir haben geschlossen!</h1>
         <h2>Liebe Rennsportfreunde,</h2>
         <p>
           mit einem wehmütigen Blick zurück und einem dankbaren Herzen möchten
