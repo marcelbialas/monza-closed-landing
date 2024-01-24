@@ -57,6 +57,7 @@ const AppContainer = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
+    height: 100%;
     flex-direction: column;
   }
 `;
@@ -76,7 +77,7 @@ const ImageContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    height: 50vh;
+    min-height: 300px;
   }
 `;
 
@@ -86,7 +87,6 @@ const ContentConainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 5%;
-  overflow-y: scroll;
 
   h1 {
   }
@@ -98,6 +98,7 @@ const ContentConainer = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 80%;
+    height: auto;
   }
 `;
 
