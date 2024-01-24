@@ -2,13 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 import img from "./pic1.jpeg";
+import MonzaLogo from "./monza_logo.png";
 
 import "./App.css";
 
 function App() {
   return (
     <AppContainer>
-      <ImageContainer>img</ImageContainer>
+      <ImageContainer>
+        <Logo src={MonzaLogo} />
+      </ImageContainer>
       <ContentConainer>
         <h2>Liebe Rennsportfreunde,</h2>
         <p>
@@ -69,6 +72,9 @@ const ImageContainer = styled.div`
   background: url(${img});
   background-size: cover;
   filter: grayscale();
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 
   &:hover {
     filter: none;
@@ -81,12 +87,22 @@ const ImageContainer = styled.div`
   }
 `;
 
+const Logo = styled.img`
+  height: 100px;
+  padding: 25px 25px;
+
+  @media screen and (max-width: 768px) {
+    height: 60px;
+  }
+`;
+
 const ContentConainer = styled.div`
   width: 45vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 5%;
+  overflow-y: scroll;
 
   h1 {
   }
