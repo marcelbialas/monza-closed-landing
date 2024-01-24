@@ -30,20 +30,21 @@ function App() {
           Bahn über die Jahre gefüllt haben.
           <br />
           <br />
-          Jede Kurve, jedes Überholmanöver, und jeder Jubelschrei hat unsere
-          Bahn mit Leben erfüllt. Es war eine fantastische Reise, die wir nie
+          Jede Kurve,jedes Überholmanöver, und jeder Jubelschrei hat unsere Bahn
+          mit Leben erfüllt. Es war eine fantastische Reise, die wir nie
           vergessen werden. Wir schließen dieses Kapitel mit einem Lächeln,
           voller Dankbarkeit für die vielen Jahre gemeinsamer Erlebnisse.
           <br />
-          <br /> Ein herzliches Dankeschön an jeden Einzelnen von euch, der Teil
+          <br />
+          Ein herzliches Dankeschön an jeden Einzelnen von euch, der Teil
           unserer Rennfamilie war. Auch wenn die Rennstrecke nun ruht, bleiben
           die Erinnerungen an die spannenden Rennen und die gemeinsamen Stunden
-          bestehen.
+          bestehen. Wir hoffen, dass ihr die gleichen positiven Erinnerungen
+          mitnehmt wie wir.
           <br />
           <br />
-          Wir hoffen, dass ihr die gleichen positiven Erinnerungen mitnehmt wie
-          wir. Abschließend möchten wir uns nochmals von ganzem Herzen bei euch
-          allen bedanken. Es war eine Ehre und Freude, euch auf unserer Kartbahn
+          Abschließend möchten wir uns nochmals von ganzem Herzen bei euch allen
+          bedanken. Es war eine Ehre und Freude, euch auf unserer Kartbahn
           begrüßen zu dürfen. Möge die Rennleidenschaft in euch weiterbrennen,
           auch wenn die Motoren auf unserer Strecke verstummt sind.
         </p>
@@ -95,6 +96,8 @@ const Logo = styled.img`
     height: 60px;
   }
 `;
+
+const Credit = styled.div``;
 
 const ContentConainer = styled.div`
   width: 45vw;
