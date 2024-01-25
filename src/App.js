@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import img from "./pic1.jpeg";
@@ -7,6 +7,20 @@ import MonzaLogo from "./monza_logo.png";
 import "./App.css";
 
 function App() {
+  const [enteredName, setEnteredName] = useState("");
+  const [signatures, setSignatures] = useState([]);
+
+  const onInputChange = (e) => {
+    setEnteredName(e.target.value.trim());
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("submitted: " + enteredName);
+    setSignatures((prevSignatures) => [...prevSignatures, enteredName]);
+    setEnteredName("");
+  };
+
   return (
     <AppContainer>
       <ImageContainer>
@@ -59,11 +73,24 @@ function App() {
             Hinterlasse deinen Namen auf unserer Website und bleibe immer
             verbunden – auch wenn die Motoren ruhen.
           </p>
-          <FormContainer>
-            <Input type="text" placeholder="Dein Vor- oder Spitzname" />
-            <Button type="submit">✍️</Button>
-          </FormContainer>
-          <Signatures>Marcel</Signatures>
+          <form onSubmit={handleSubmit}>
+            <FormContainer>
+              <Input
+                type="text"
+                placeholder="Dein Vor- oder Spitzname"
+                value={enteredName}
+                onChange={(e) => onInputChange(e)}
+              />
+              <Button type="submit">✍️</Button>
+            </FormContainer>
+          </form>
+          <Signatures>
+            <ul>
+              {signatures.map((signature, index) => (
+                <li key={index}>{signature}</li>
+              ))}
+            </ul>
+          </Signatures>
         </SignSection>
         <Footer>
           <p>&copy; {new Date().getFullYear()} Monza Indoor Kart GmbH</p>
@@ -79,6 +106,8 @@ function App() {
 
 const SignSection = styled.div`
   margin-top: 25px;
+  background-color: #eee;
+  padding: 25px;
 
   h3 {
     color: #c70039;
@@ -211,6 +240,14 @@ const ContentConainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 90%;
     height: auto;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
   }
 `;
 
