@@ -25,14 +25,14 @@ function App() {
     <AppContainer>
       <ImageContainer>
         <Credit>
-          Fotos von
-          <a href="https://instagram.com/whokilledbambi">@whokilledbambi</a>
+          Foto
+          <a href="https://instagram.com/whokilledbambi">&copy; Lennart Bick</a>
         </Credit>
         <Logo src={MonzaLogo} />
       </ImageContainer>
       <ContentConainer>
         <ScrollButton>
-          <a href="#signature">Jetzt Digital verewigen 👇</a>
+          <a href="#signature">Mit deinem Namen verewigen 👇</a>
         </ScrollButton>
         <h1>Wir haben geschlossen!</h1>
         <h2>Liebe Kundinnen und Kunden,</h2>
@@ -275,9 +275,9 @@ const Footer = styled.footer`
 
 const ScrollButton = styled.div`
   margin-top: 25px;
-  width: 200px;
-  border: 1px solid #ffd866;
-  padding: 5px 10px;
+  width: 230px;
+  border: 1px solid #121212;
+  padding: 2.5px 10px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -291,6 +291,7 @@ const ScrollButton = styled.div`
 
   &:hover {
     background-color: #ffd866;
+    border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
   }
 `;
