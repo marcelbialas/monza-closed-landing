@@ -11,7 +11,7 @@ function App() {
     <AppContainer>
       <ImageContainer>
         <Credit>
-          Fotos von{" "}
+          Fotos von
           <a href="https://instagram.com/whokilledbambi">@whokilledbambi</a>
         </Credit>
         <Logo src={MonzaLogo} />
@@ -54,7 +54,7 @@ function App() {
           auch wenn die Motoren auf unserer Strecke verstummt sind.
         </p>
         <Footer>
-          <p>&copy; 2024 Monza Indoor Kart GmbH</p>
+          <p>&copy; {new Date().getFullYear()} Monza Indoor Kart GmbH</p>
           <div>
             <a href="/impressum">Impressum</a>
             <a href="/datenschutz">Datenschutz</a>
@@ -144,10 +144,12 @@ const ContentConainer = styled.div`
   h1 {
     margin-bottom: 0px;
     color: #c70039;
+    font-size: 36px;
   }
   h2 {
     margin-top: 0px;
     font-weight: 500;
+    font-size: 26px;
   }
 
   @media screen and (max-width: 768px) {
