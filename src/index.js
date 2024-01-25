@@ -1,14 +1,21 @@
 import React from "react";
+import { Route } from "wouter";
+
 import ReactDOM from "react-dom/client";
-import "@fontsource-variable/space-grotesk";
+
 import "./index.css";
+import "@fontsource-variable/space-grotesk";
+
 import App from "./App";
+import Impressum from "./Impressum";
+
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Route path="/" component={App} />
+    <Route path="/impressum" component={Impressum} />
   </React.StrictMode>
 );
 

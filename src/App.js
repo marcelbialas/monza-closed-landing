@@ -204,12 +204,12 @@ const Credit = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   gap: 5px;
 
   a,
   a:visited {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -218,6 +218,7 @@ const Credit = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
+    padding: 10px;
   }
 `;
 
@@ -276,23 +277,27 @@ const Footer = styled.footer`
 const ScrollButton = styled.div`
   margin-top: 25px;
   width: 230px;
-  border: 1px solid #121212;
+  background: rgba(230, 230, 230, 1);
   padding: 2.5px 10px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 
   a {
     text-decoration: none;
     font-size: 14px;
-    color: #121212;
+    color: rgb(12, 12, 12);
   }
 
   &:hover {
-    background-color: #ffd866;
-    border: 1px solid transparent;
+    transform: scale(105%);
     transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    //width: 100%;
   }
 `;
 
