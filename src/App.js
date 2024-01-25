@@ -31,6 +31,9 @@ function App() {
         <Logo src={MonzaLogo} />
       </ImageContainer>
       <ContentConainer>
+        <ScrollButton>
+          <a href="#signature">Jetzt Digital verewigen 👇</a>
+        </ScrollButton>
         <h1>Wir haben geschlossen!</h1>
         <h2>Liebe Kundinnen und Kunden,</h2>
         <p>
@@ -67,7 +70,7 @@ function App() {
           begrüßen zu dürfen. Möge die Rennleidenschaft in euch weiterbrennen,
           auch wenn die Motoren auf unserer Strecke verstummt sind.
         </p>
-        <SignSection>
+        <SignSection id="signature">
           <h3>Deine Unterschrift – unser Dank:</h3>
           <p>
             Hinterlasse deinen Namen auf unserer Website und bleibe immer
@@ -267,6 +270,28 @@ const Footer = styled.footer`
     &:hover {
       text-decoration: underline;
     }
+  }
+`;
+
+const ScrollButton = styled.div`
+  margin-top: 25px;
+  width: 200px;
+  border: 1px solid #ffd866;
+  padding: 5px 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #121212;
+  }
+
+  &:hover {
+    background-color: #ffd866;
+    transition: all 0.2s ease-in-out;
   }
 `;
 
