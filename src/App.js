@@ -101,6 +101,12 @@ const Input = styled.input`
   font-size: 18px;
   font-family: "Space Grotesk Variable", sans-serif;
   font-weight: 500;
+  border-radius: none;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #121212;
+  }
 `;
 const Button = styled.button`
   border: none;
