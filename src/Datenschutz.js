@@ -950,17 +950,17 @@ const Datenschutz = () => {
         >
           https://eur- lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de
         </a>
-        <br />
-        <br /> Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data
-        Processing Terms), welche auf die Standardvertragsklauseln verweisen,
-        finden Sie unter{" "}
-        <a href="https://business.safety.google/intl/de/adsprocessorterms/">
-          https://business.safety.google/intl/de/adsprocessorterms/
-        </a>
-        .
-        <br />
-        <br /> Mehr über die Daten, die durch die Verwendung von Firebase
-        verarbeitet werden, erfahren Sie in der Privacy Policy auf
+        <p>
+          Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data
+          Processing Terms), welche auf die Standardvertragsklauseln verweisen,
+          finden Sie unter
+          <br />
+          <a href="https://business.safety.google/intl/de/adsprocessorterms/">
+            https://business.safety.google/intl/de/adsprocessorterms/
+          </a>
+        </p>
+        Mehr über die Daten, die durch die Verwendung von Firebase verarbeitet
+        werden, erfahren Sie in der Privacy Policy auf
         <a href="https://policies.google.com/privacy?hl=de">
           https://policies.google.com/privacy?hl=de
         </a>
