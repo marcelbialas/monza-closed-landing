@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import img from "./pic1.jpeg";
@@ -7,20 +7,6 @@ import MonzaLogo from "./monza_logo.png";
 import "./App.css";
 
 function App() {
-  const [enteredName, setEnteredName] = useState("");
-  const [signatures, setSignatures] = useState([]);
-
-  const onInputChange = (e) => {
-    setEnteredName(e.target.value.trim());
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("submitted: " + enteredName);
-    setSignatures((prevSignatures) => [...prevSignatures, enteredName]);
-    setEnteredName("");
-  };
-
   return (
     <AppContainer>
       <ImageContainer>
@@ -67,31 +53,6 @@ function App() {
           begrüßen zu dürfen. Möge die Rennleidenschaft in euch weiterbrennen,
           auch wenn die Motoren auf unserer Strecke verstummt sind.
         </p>
-        <SignSection id="signature">
-          <h3>Deine Unterschrift – unser Dank:</h3>
-          <p>
-            Hinterlasse deinen Namen auf unserer Website und bleibe immer
-            verbunden – auch wenn die Motoren ruhen.
-          </p>
-          <form onSubmit={handleSubmit}>
-            <FormContainer>
-              <Input
-                type="text"
-                placeholder="Dein Vor- oder Spitzname"
-                value={enteredName}
-                onChange={(e) => onInputChange(e)}
-              />
-              <Button type="submit">✍️</Button>
-            </FormContainer>
-          </form>
-          <Signatures>
-            <ul>
-              {signatures.map((signature, index) => (
-                <li key={index}>{signature}</li>
-              ))}
-            </ul>
-          </Signatures>
-        </SignSection>
         <Footer>
           <p>&copy; {new Date().getFullYear()} Monza Indoor Kart GmbH</p>
           <div>
@@ -103,52 +64,6 @@ function App() {
     </AppContainer>
   );
 }
-
-const SignSection = styled.div`
-  margin-top: 25px;
-  background-color: #eee;
-  padding: 25px;
-
-  h3 {
-    color: #c70039;
-  }
-`;
-const Signatures = styled.div``;
-
-const FormContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-`;
-const Input = styled.input`
-  flex: 1;
-  width: 85%;
-  border: 2px solid #121212;
-  box-sizing: border-box;
-  padding: 15px;
-  height: 45px;
-  font-size: 18px;
-  font-family: "Space Grotesk Variable", sans-serif;
-  font-weight: 500;
-  border-radius: none;
-
-  &:focus {
-    outline: none;
-    border: 2px solid #121212;
-  }
-`;
-const Button = styled.button`
-  border: none;
-  background-color: #121212;
-  color: #fff;
-  padding: 15px;
-  height: 45px;
-  cursor: pointer;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 const AppContainer = styled.div`
   height: 100vh;
