@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { styled, keyframes } from "styled-components";
+import { styled } from "styled-components";
 
 import img from "./pic1.jpeg";
 import img2 from "./pic2.jpeg";
@@ -29,7 +29,10 @@ function App() {
 
   return (
     <AppContainer>
-      <ImageContainer imageUrl={images[currentImageIndex]}>
+      <ImageContainer
+        key={currentImageIndex}
+        imageUrl={preloadedImages[currentImageIndex].src}
+      >
         <Credit>
           Foto
           <a href="https://instagram.com/whokilledbambi">&copy; Lennart Bick</a>
