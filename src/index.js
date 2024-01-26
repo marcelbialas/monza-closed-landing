@@ -10,12 +10,14 @@ import App from "./App";
 import Impressum from "./Impressum";
 
 import reportWebVitals from "./reportWebVitals";
+import Datenschutzerklaerung from "./Datenschutz";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Route path="/" component={App} />
     <Route path="/impressum" component={Impressum} />
+    <Route path="/datenschutz" component={Datenschutzerklaerung} />
   </React.StrictMode>
 );
 

@@ -49,7 +49,7 @@ const Impressum = () => {
 
       <Section>
         <SubHeading>Bildnachweise:</SubHeading>
-        <p>Bild: Karthalle von Lennart Bick</p>
+        <p>Bild Karthalle: &copy; 2023 Lennart Bick</p>
       </Section>
 
       <Section>
@@ -67,7 +67,6 @@ const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
 
   p {
     display: block;
