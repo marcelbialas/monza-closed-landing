@@ -31,9 +31,6 @@ function App() {
         <Logo src={MonzaLogo} />
       </ImageContainer>
       <ContentConainer>
-        <ScrollButton>
-          <a href="#signature">Mit deinem Namen verewigen 👇</a>
-        </ScrollButton>
         <h1>Wir haben geschlossen!</h1>
         <h2>Liebe Kundinnen und Kunden,</h2>
         <p>
@@ -271,33 +268,6 @@ const Footer = styled.footer`
     &:hover {
       text-decoration: underline;
     }
-  }
-`;
-
-const ScrollButton = styled.div`
-  margin-top: 25px;
-  width: 230px;
-  background: rgba(230, 230, 230, 1);
-  padding: 2.5px 10px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    color: rgb(12, 12, 12);
-  }
-
-  &:hover {
-    transform: scale(105%);
-    transition: all 0.2s ease-in-out;
-  }
-
-  @media screen and (max-width: 768px) {
-    //width: 100%;
   }
 `;
 
