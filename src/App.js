@@ -52,7 +52,7 @@ function App() {
         <h2>Liebe Kundinnen und Kunden,</h2>
         <p>
           mit einem wehmütigen Blick zurück möchten wir euch darüber
-          informieren, dass unsere Kartbahn seit dem
+          informieren, dass unsere Kartbahn seit dem{" "}
           <strong>18. Dezember 2023</strong> ihre Pforten geschlossen hat. Diese
           27 Jahre voller Adrenalin, Fahrspaß und unvergesslicher Momente wären
           ohne euch nicht möglich gewesen. <br />

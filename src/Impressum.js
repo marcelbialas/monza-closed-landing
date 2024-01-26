@@ -48,11 +48,6 @@ const Impressum = () => {
       </Section>
 
       <Section>
-        <SubHeading>Bildnachweise:</SubHeading>
-        <p>Bild Karthalle: &copy; 2023 Lennart Bick</p>
-      </Section>
-
-      <Section>
         <SubHeading>Copyright:</SubHeading>
         <p>
           © {new Date().getFullYear()}, Monza Indoor Kart GmbH. Alle Rechte
