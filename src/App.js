@@ -42,8 +42,8 @@ function App() {
         imageUrl={preloadedImages[currentImageIndex].src}
       >
         <Credit>
-          Fotos
-          <a href="https://instagram.com/whokilledbambi">&copy; Lennart Bick</a>
+          Fotos von
+          <a href="https://instagram.com/whokilled.bambi">@whokilled.bambi</a>
         </Credit>
         <Logo src={MonzaLogo} />
       </ImageContainer>
