@@ -1,15 +1,35 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState, useEffect } from "react";
+import { styled, keyframes } from "styled-components";
 
 import img from "./pic1.jpeg";
+import img2 from "./pic2.jpeg";
+
 import MonzaLogo from "./monza_logo.png";
 
 import "./App.css";
 
 function App() {
+  const images = [img, img2];
+
+  const preloadedImages = images.map((image) => {
+    const img = new Image();
+    img.src = image;
+    return img;
+  });
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [images.length]);
+
   return (
     <AppContainer>
-      <ImageContainer>
+      <ImageContainer imageUrl={images[currentImageIndex]}>
         <Credit>
           Foto
           <a href="https://instagram.com/whokilledbambi">&copy; Lennart Bick</a>
@@ -82,7 +102,7 @@ const ImageContainer = styled.div`
   width: 50vw;
   height: 100%;
   background-color: #eee;
-  background: url(${img});
+  background: url(${(props) => props.imageUrl});
   background-size: cover;
   display: flex;
   flex-direction: column-reverse;
