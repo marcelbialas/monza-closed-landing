@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { styled } from "styled-components";
 
-import img from "./pic1.jpeg";
-import img2 from "./pic2.jpeg";
-
 import MonzaLogo from "./monza_logo.png";
 
 import "./App.css";
 
 function App() {
-  const images = [img, img2];
+  const images = [
+    require("./img/pic1.jpg"),
+    require("./img/pic2.jpg"),
+    require("./img/pic3.jpg"),
+    require("./img/pic4.jpg"),
+    require("./img/pic5.jpg"),
+    require("./img/pic6.jpg"),
+    require("./img/pic7.jpg"),
+    require("./img/pic8.jpg"),
+  ];
 
-  const preloadedImages = images.map((image) => {
-    const img = new Image();
-    img.src = image;
-    return img;
-  });
+  const preloadedImages = images
+    .sort(() => Math.random() - 0.5)
+    .map((image) => {
+      const img = new Image();
+      img.src = image;
+      return img;
+    });
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -34,7 +42,7 @@ function App() {
         imageUrl={preloadedImages[currentImageIndex].src}
       >
         <Credit>
-          Foto
+          Fotos
           <a href="https://instagram.com/whokilledbambi">&copy; Lennart Bick</a>
         </Credit>
         <Logo src={MonzaLogo} />
