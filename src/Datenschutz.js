@@ -927,8 +927,11 @@ const Datenschutz = () => {
         aktiver Teilnehmer des EU-US Data Privacy Frameworks, wodurch der
         korrekte und sichere Datentransfer personenbezogener Daten von
         EU-Bürgern in die USA geregelt wird. Mehr Informationen dazu finden Sie
-        auf
-        https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en.
+        auf{" "}
+        <a href="https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en">
+          https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en
+        </a>
+        .
         <br />
         <br />
         Zudem verwendet Google sogenannte Standardvertragsklauseln (= Art. 46.
@@ -943,7 +946,7 @@ const Datenschutz = () => {
         selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet
         werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der
         EU-Kommission. Sie finden den Beschluss und die entsprechenden
-        Standardvertragsklauseln u.a. hier:
+        Standardvertragsklauseln u.a. hier:{" "}
         <a
           href="https://eur-
         lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de"
@@ -953,14 +956,13 @@ const Datenschutz = () => {
         <p>
           Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data
           Processing Terms), welche auf die Standardvertragsklauseln verweisen,
-          finden Sie unter
-          <br />
+          finden Sie unter{" "}
           <a href="https://business.safety.google/intl/de/adsprocessorterms/">
             https://business.safety.google/intl/de/adsprocessorterms/
           </a>
         </p>
         Mehr über die Daten, die durch die Verwendung von Firebase verarbeitet
-        werden, erfahren Sie in der Privacy Policy auf
+        werden, erfahren Sie in der Privacy Policy auf{" "}
         <a href="https://policies.google.com/privacy?hl=de">
           https://policies.google.com/privacy?hl=de
         </a>
@@ -974,9 +976,15 @@ const Container = styled.div`
   max-width: 70vw;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
-    max-width: 95vw;
+    max-width: 100%;
+    overflow-x: none;
+  }
+
+  a {
+    word-break: break-all;
   }
 `;
 
