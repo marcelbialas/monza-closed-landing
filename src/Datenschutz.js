@@ -943,7 +943,7 @@ const Datenschutz = () => {
         selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet
         werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der
         EU-Kommission. Sie finden den Beschluss und die entsprechenden
-        Standardvertragsklauseln u.a. hier:{" "}
+        Standardvertragsklauseln u.a. hier:
         <a
           href="https://eur-
         lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de"
@@ -953,7 +953,7 @@ const Datenschutz = () => {
         <br />
         <br /> Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data
         Processing Terms), welche auf die Standardvertragsklauseln verweisen,
-        finden Sie unter
+        finden Sie unter{" "}
         <a href="https://business.safety.google/intl/de/adsprocessorterms/">
           https://business.safety.google/intl/de/adsprocessorterms/
         </a>
